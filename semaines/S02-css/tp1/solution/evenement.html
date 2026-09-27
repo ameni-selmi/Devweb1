@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atelier Arduino pour débutants · ClubHub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">ClubHub</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="evenements.html">Événements</a></li>
+        <li><a href="evenement.html" aria-current="page">S'inscrire</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="event-page">
+    <article class="event-detail">
+      <p class="club">Club Robotique</p>
+      <h1>Atelier Arduino pour débutants</h1>
+      <ul class="facts">
+        <li><strong>Date :</strong> <time datetime="2026-10-14T14:00">mercredi 14 octobre 2026, de 14 h à 17 h</time></li>
+        <li><strong>Lieu :</strong> Salle B204</li>
+        <li><strong>Places :</strong> 20</li>
+      </ul>
+
+      <p>Vous n'avez jamais touché un Arduino ? Cet atelier est fait pour vous. En trois heures, vous allez câbler vos premiers composants, écrire vos premiers programmes et repartir avec un petit projet qui fonctionne. Les cartes et les composants sont fournis par le club.</p>
+
+      <h2>Au programme</h2>
+      <ul>
+        <li>Découvrir la carte Arduino Uno</li>
+        <li>Faire clignoter une LED</li>
+        <li>Lire un capteur de température</li>
+        <li>Mini projet : un thermomètre à LED</li>
+      </ul>
+
+      <h2>À apporter</h2>
+      <ul>
+        <li>Un ordinateur portable</li>
+        <li>Un câble USB (si vous en avez un)</li>
+      </ul>
+    </article>
+
+    <section class="registration">
+      <h2>S'inscrire</h2>
+      <form action="inscription.php" method="post">
+        <p>
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" name="name" required minlength="3" autocomplete="name">
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email" placeholder="prenom.nom@ecole.tn">
+        </p>
+        <p>
+          <label for="level">Niveau d'études</label>
+          <select id="level" name="level" required>
+            <option value="">Choisir...</option>
+            <option value="1">1re année</option>
+            <option value="2">2e année</option>
+            <option value="3">3e année</option>
+          </select>
+        </p>
+        <fieldset>
+          <legend>Avez vous déjà utilisé un Arduino ?</legend>
+          <label><input type="radio" name="experience" value="yes"> Oui</label>
+          <label><input type="radio" name="experience" value="no" checked> Non</label>
+        </fieldset>
+        <p>
+          <label for="motivation">Motivation (facultatif)</label>
+          <textarea id="motivation" name="motivation" rows="4"></textarea>
+        </p>
+        <p>
+          <label><input type="checkbox" name="rules" value="1" required> J'accepte le règlement du club</label>
+        </p>
+        <p>
+          <button type="submit">S'inscrire</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>ClubHub · École d'ingénieurs · 2026</p>
+  </footer>
+</body>
+</html>

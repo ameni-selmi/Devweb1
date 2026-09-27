@@ -1,0 +1,44 @@
+/* @theme devweb */
+@import 'default';
+
+:root {
+  --bleu: #1d4ed8;
+  --encre: #1e293b;
+  --gris: #64748b;
+  --fond-code: #f1f5f9;
+  --accent: #f59e0b;
+}
+
+section {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  color: var(--encre);
+  background: #ffffff;
+  font-size: 28px;
+  padding: 60px 70px;
+}
+
+h1 { color: var(--bleu); font-size: 1.6em; }
+h2 { color: var(--bleu); font-size: 1.3em; border-bottom: 3px solid var(--accent); padding-bottom: 6px; }
+h3 { color: var(--encre); }
+
+code { background: var(--fond-code); color: #be123c; padding: 2px 6px; border-radius: 4px; }
+pre { background: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 8px; }
+pre code { background: transparent; color: #1e293b; font-size: 0.85em; }
+
+table { font-size: 0.8em; }
+th { background: var(--bleu); color: white; }
+
+blockquote { border-left: 6px solid var(--accent); background: #fffbeb; padding: 10px 20px; color: var(--encre); }
+
+section.titre { background: var(--bleu); color: white; justify-content: center; }
+section.titre h1, section.titre h2 { color: white; border: none; }
+
+section.question { background: #fffbeb; justify-content: center; text-align: center; font-size: 34px; }
+
+footer { color: var(--gris); font-size: 0.55em; }
+
+.piege { background: #fef2f2; border-left: 6px solid #dc2626; padding: 10px 20px; }
+.regle { background: #ecfdf5; border-left: 6px solid #059669; padding: 10px 20px; }
+
+.cols { display: flex; gap: 40px; }
+.cols > * { flex: 1; }
