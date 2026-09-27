@@ -25,7 +25,7 @@ Pour chaque ligne, cochez une case : 0 = jamais utilisé · 1 = un peu · 2 = à
 2. Quelle est la différence entre une requête `GET` et une requête `POST` ?
 3. Écrivez la balise HTML d'un lien vers `contact.html`.
 4. En CSS, comment rendre le texte de tous les paragraphes rouge ?
-5. Écrivez une requête SQL qui récupère tous les étudiants dont la ville est `'Tunis'`, dans une table `students`.
+5. Écrivez une requête SQL qui récupère tous les étudiants de 1re année (colonne `year`), dans une table `students`.
 6. Le code JavaScript d'une page s'exécute-t-il sur le serveur ou dans le navigateur ?
 7. Que peut-il arriver si on écrit : `"SELECT * FROM users WHERE email = '" + email + "'"` ?
 
@@ -37,7 +37,7 @@ Pour chaque ligne, cochez une case : 0 = jamais utilisé · 1 = un peu · 2 = à
 2. GET : lire, données dans l'URL. POST : envoyer, données dans le corps.
 3. `<a href="contact.html">Contact</a>`
 4. `p { color: red; }`
-5. `SELECT * FROM students WHERE city = 'Tunis';`
+5. `SELECT * FROM students WHERE year = 1;`
 6. Dans le navigateur.
 7. Injection SQL.
 

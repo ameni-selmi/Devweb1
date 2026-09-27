@@ -8,7 +8,7 @@
 
 ## 2. L'utilisateur
 
-Qui va utiliser l'application ? Soyez précis (« le club photo de l'école, 40 membres », pas « tout le monde »).
+Qui va utiliser l'application ? Soyez précis (« le club photo du campus, 40 membres », pas « tout le monde »).
 
 ## 3. Le problème
 
@@ -37,10 +37,10 @@ Lesquelles, et pourquoi.
 
 ## 8. Ce qui nous inquiète
 
-Une ou deux choses dont vous n'êtes pas sûrs de pouvoir les faire. L'enseignant vous aidera à décider.
+Une ou deux choses dont vous n'êtes pas sûrs de pouvoir les faire. L'enseignante vous aidera à décider.
 
 ---
 
-*Réponse de l'enseignant :* ☐ Validé · ☐ Validé avec changements · ☐ À refaire
+*Réponse de l'enseignante :* ☐ Validé · ☐ Validé avec changements · ☐ À refaire
 
 *Commentaires :*

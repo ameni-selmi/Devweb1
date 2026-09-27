@@ -1,6 +1,6 @@
 # TP1 (noté) : Styliser ClubHub
 
-**Noté sur 20 · 15 % de la note finale** · En binôme · Durée : 1 h 35 en séance
+**Noté sur 20** · En binôme · Durée : 1 h 35 en séance
 **Rendu : dépôt Git, ce soir avant 23 h 59** (le dernier commit avant l'heure limite est corrigé)
 
 ## Objectifs
@@ -62,11 +62,11 @@ Choisissez **un** défi (ou plus) :
 
 1. Dans votre dépôt `clubhub`, le dossier contient `index.html`, `evenements.html`, `evenement.html` et `css/style.css`.
 2. Un fichier `README.md` avec : les noms du binôme, les défis choisis, et **une chose** que vous avez apprise dans ce TP.
-3. Dernier commit avant 23 h 59. L'enseignant corrige ce commit.
+3. Dernier commit avant 23 h 59. L'enseignante corrige ce commit.
 
 ## Comment vous serez évalués
 
-Voir la grille dans `grille.md`. En résumé : respect de la maquette, qualité et organisation du CSS, responsive, et respect des règles. **Un CSS copié d'un template ou généré sans être compris** sera repéré à l'oral (l'enseignant peut vous demander d'expliquer une règle) et donnera 0 sur les points concernés.
+Voir la grille dans `grille.md`. En résumé : respect de la maquette, qualité et organisation du CSS, responsive, et respect des règles. **Un CSS copié d'un template ou généré sans être compris** sera repéré à l'oral (l'enseignante peut vous demander d'expliquer une règle) et donnera 0 sur les points concernés.
 
 ## Aide
 

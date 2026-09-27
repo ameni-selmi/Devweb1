@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Démo JS : matériel</title>
+</head>
+<body>
+  <h1>Matériel pour l'atelier</h1>
+  <form id="add-form">
+    <label for="item">Objet</label>
+    <input type="text" id="item" name="item">
+    <button type="submit">Ajouter</button>
+    <small id="item-error"></small>
+  </form>
+  <p id="count"></p>
+  <ul id="list">
+    <li>Ordinateur portable <button type="button" class="remove">×</button></li>
+    <li>Câble USB <button type="button" class="remove">×</button></li>
+  </ul>
+  <script src="app.js" defer></script>
+</body>
+</html>

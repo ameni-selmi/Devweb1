@@ -2,7 +2,7 @@
 marp: true
 theme: devweb
 paginate: true
-footer: 'Développement Web 1 · S01 · Comment fonctionne le Web + HTML'
+footer: 'Développement Web 1 · Amani Selmi · S01 · Comment fonctionne le Web + HTML'
 ---
 
 <!-- _class: titre -->
@@ -10,7 +10,22 @@ footer: 'Développement Web 1 · S01 · Comment fonctionne le Web + HTML'
 <!-- _footer: '' -->
 
 # Développement Web 1
-## Semaine 1 : Comment fonctionne le Web + HTML
+## Séance 1 : Comment fonctionne le Web + HTML
+
+**Amani Selmi, PhD-Engineer**
+
+---
+
+## Votre enseignante
+
+### Amani Selmi, PhD-Engineer
+
+* Des questions ? **Pendant l'atelier**, c'est le meilleur moment : je circule entre les binômes.
+* Avant de m'appeler : F12, relire le message d'erreur, chercher 5 minutes.
+* Tout le cours est dans le **dépôt Git** : slides, énoncés, aide-mémoire.
+* Les corrigés sont publiés **après** chaque TP.
+
+<!-- Se présenter en quelques phrases : parcours, pourquoi ce cours est construit ainsi. Donner le moyen de contact choisi pour ce groupe. -->
 
 ---
 
@@ -18,7 +33,7 @@ footer: 'Développement Web 1 · S01 · Comment fonctionne le Web + HTML'
 
 Construire une vraie application web **sans framework**, pour comprendre ce que les frameworks font à votre place.
 
-* 11 semaines, 3 h par semaine
+* 11 séances de 3 h
 * Beaucoup de pratique : environ 70 % du temps
 * Une application fil rouge : **ClubHub**
 * Un projet final **original**, pas un énième CRUD
@@ -41,7 +56,7 @@ Pas de Bootstrap, pas de React, pas de Laravel. **Volontairement.**
 
 ---
 
-## Évaluation
+## Évaluation (poids indicatifs)
 
 | | Poids |
 |---|---|
@@ -51,6 +66,8 @@ Pas de Bootstrap, pas de React, pas de Laravel. **Volontairement.**
 | TP4 : MySQL, PDO | 15 % |
 | TP5 : Structure | 15 % |
 | **Projet final** (binôme, soutenance) | **40 %** |
+
+Les poids définitifs sont confirmés à la première séance.
 
 ---
 
@@ -62,7 +79,7 @@ Pas de Bootstrap, pas de React, pas de Laravel. **Volontairement.**
 * Petite modification demandée en direct
 * Code non compris = code non compté
 
-<!-- Dire clairement : l'IA est un outil de travail normal en 2026. Le but est que VOUS compreniez. -->
+<!-- Dire clairement : l'IA est aujourd'hui un outil de travail normal. Le but est que VOUS compreniez. -->
 
 ---
 
@@ -70,7 +87,7 @@ Pas de Bootstrap, pas de React, pas de Laravel. **Volontairement.**
 
 ## Question
 
-Vous tapez `https://www.ecole.tn` et vous appuyez sur Entrée.
+Vous tapez `https://www.example.org` et vous appuyez sur Entrée.
 
 **Que se passe-t-il jusqu'à l'affichage de la page ?**
 
@@ -98,7 +115,7 @@ Vous tapez `https://www.ecole.tn` et vous appuyez sur Entrée.
 ## Les étapes
 
 1. **URL** analysée : protocole, domaine, chemin
-2. **DNS** : `www.ecole.tn` → `196.203.x.x`
+2. **DNS** : `www.example.org` → `93.184.x.x`
 3. Connexion **TCP** (+ **TLS** si HTTPS)
 4. Envoi de la **requête** HTTP
 5. Le serveur prépare la **réponse**
@@ -112,7 +129,7 @@ Une page = souvent **des dizaines** de requêtes.
 ## Anatomie d'une URL
 
 ```
-https://www.ecole.tn:443/clubs/robotique?tri=date#agenda
+https://www.example.org:443/clubs/robotique?tri=date#agenda
 └─┬─┘   └────┬─────┘ └┬┘ └──────┬──────┘ └───┬──┘ └──┬─┘
 protocole  domaine   port     chemin      query   fragment
 ```
@@ -126,7 +143,7 @@ protocole  domaine   port     chemin      query   fragment
 
 ```http
 GET /clubs/robotique?tri=date HTTP/1.1
-Host: www.ecole.tn
+Host: www.example.org
 User-Agent: Mozilla/5.0 ...
 Accept: text/html
 Accept-Language: fr-FR
@@ -192,7 +209,7 @@ Le serveur **oublie tout** entre deux requêtes.
 * Il ne sait pas que vous êtes connecté.
 
 Alors comment fonctionne un panier ou une connexion ?
-→ **Cookies et sessions** (semaine 5).
+→ **Cookies et sessions** (séance 5).
 
 ---
 
@@ -230,7 +247,7 @@ HTTP + **TLS** = la même chose, mais **chiffrée**.
 
 ```html
 <h1>ClubHub</h1>
-<p>Les événements des clubs de l'école.</p>
+<p>Les événements des clubs étudiants.</p>
 <a href="evenements.html">Voir les événements</a>
 ```
 
@@ -349,4 +366,4 @@ Piège : la validation HTML se contourne en 5 secondes. Le serveur devra **toujo
 
 Énoncé : `semaines/S01-web-html/atelier/enonce.md`
 
-**Semaine prochaine : TP1 noté (CSS) sur ces pages.**
+**Séance prochaine : TP1 noté (CSS) sur ces pages.**

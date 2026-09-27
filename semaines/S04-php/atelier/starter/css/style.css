@@ -1,0 +1,486 @@
+/* ==========================================================
+   ClubHub : feuille de style (corrigé TP1)
+   Approche mobile first : styles de base pour petit écran,
+   puis media queries pour les écrans plus larges.
+   ========================================================== */
+
+/* 1. Variables ---------------------------------------------- */
+:root {
+  --color-primary: #1d4ed8;
+  --color-primary-dark: #1e3a8a;
+  --color-accent: #f59e0b;
+  --color-text: #1e293b;
+  --color-muted: #64748b;
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
+  --radius: 10px;
+  --space: 1rem;
+  --shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+  --max-width: 1100px;
+  --color-footer: #1e293b;
+  --color-error: #b91c1c;
+  --color-success: #047857;
+}
+
+/* 2. Base --------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+  margin: 0 0 0.5em;
+}
+
+h1 { font-size: 1.8rem; }
+h2 { font-size: 1.35rem; }
+h3 { font-size: 1.15rem; }
+
+a {
+  color: var(--color-primary);
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--color-primary-dark);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: calc(var(--space) * 1.5) var(--space);
+}
+
+/* 3. En-tête et navigation ---------------------------------- */
+.site-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: var(--space);
+  background: var(--color-primary);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-header nav a {
+  display: block;
+  padding: 0.4rem 0.6rem;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+
+.site-header nav a:hover,
+.site-header nav a:focus-visible,
+.site-header nav a[aria-current="page"] {
+  color: #fff;
+  border-bottom-color: var(--color-accent);
+}
+
+/* 4. Bandeau d'accueil -------------------------------------- */
+.hero {
+  padding: calc(var(--space) * 2) var(--space);
+  margin-bottom: calc(var(--space) * 2);
+  text-align: center;
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.hero p {
+  max-width: 60ch;
+  margin: 0 auto 1.5rem;
+  color: var(--color-muted);
+}
+
+/* 5. Boutons ------------------------------------------------ */
+.button,
+button {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  font: inherit;
+  font-weight: 600;
+  color: #fff;
+  background: var(--color-primary);
+  border: none;
+  border-radius: var(--radius);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus-visible,
+button:hover,
+button:focus-visible {
+  color: #fff;
+  background: var(--color-primary-dark);
+}
+
+/* 6. Cartes d'événements ------------------------------------ */
+.event-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space);
+  margin-bottom: calc(var(--space) * 2);
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-top: 4px solid var(--color-primary);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.event-card h2,
+.event-card h3 {
+  font-size: 1.15rem;
+}
+
+.event-card p {
+  margin: 0 0 0.25rem;
+}
+
+.event-card a {
+  margin-top: auto;           /* pousse le lien en bas de la carte */
+  padding-top: 0.75rem;
+  font-weight: 600;
+}
+
+.club {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.meta {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+.places strong {
+  color: var(--color-primary);
+}
+
+/* 7. Tableau ------------------------------------------------ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-surface);
+  box-shadow: var(--shadow);
+}
+
+th,
+td {
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+th {
+  color: #fff;
+  background: var(--color-primary);
+}
+
+tbody tr:nth-child(even) {
+  background: var(--color-bg);
+}
+
+/* 8. Page d'un événement ------------------------------------ */
+.event-page {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--space) * 2);
+}
+
+.event-detail,
+.registration {
+  padding: calc(var(--space) * 1.5);
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.facts {
+  padding: var(--space);
+  list-style: none;
+  background: var(--color-bg);
+  border-left: 4px solid var(--color-accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+/* 9. Formulaire --------------------------------------------- */
+form p {
+  margin: 0 0 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  font: inherit;
+  color: inherit;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid rgba(29, 78, 216, 0.3);
+  border-color: var(--color-primary);
+}
+
+fieldset {
+  margin: 0 0 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+}
+
+legend {
+  font-weight: 600;
+}
+
+/* Labels qui contiennent une case ou un bouton radio : sur une ligne */
+fieldset label,
+label:has(input[type="checkbox"]) {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-right: 1rem;
+  font-weight: 400;
+}
+
+button[type="submit"] {
+  width: 100%;
+}
+
+/* 10. Pied de page ------------------------------------------ */
+.site-footer {
+  padding: var(--space);
+  text-align: center;
+  color: #cbd5e1;
+  background: var(--color-footer);
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+/* ==========================================================
+   Tablette : à partir de 640 px
+   ========================================================== */
+@media (min-width: 640px) {
+  .site-header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: var(--space) calc(var(--space) * 2);
+  }
+
+  .event-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .event-card {
+    flex: 1 1 calc(50% - var(--space));   /* 2 cartes par ligne */
+  }
+
+  h1 { font-size: 2.2rem; }
+}
+
+/* ==========================================================
+   Ordinateur : à partir de 960 px
+   ========================================================== */
+@media (min-width: 960px) {
+  .event-card {
+    flex: 1 1 calc(33.333% - var(--space));   /* 3 cartes par ligne */
+  }
+
+  .event-page {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .event-detail {
+    flex: 3;
+  }
+
+  .registration {
+    flex: 2;
+    position: sticky;
+    top: var(--space);
+  }
+
+  button[type="submit"] {
+    width: auto;
+  }
+}
+
+/* ==========================================================
+   TP2 : styles pour le JavaScript (donnés)
+   ========================================================== */
+
+[hidden] {
+  display: none !important;   /* un élément caché par JS reste caché, même si c'est un flex item */
+}
+
+.theme-toggle {
+  padding: 0.35rem 0.8rem;
+  font-size: 0.9rem;
+  color: #fff;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+@media (min-width: 640px) {
+  .site-header nav {
+    margin-left: auto;   /* la navigation part à droite, le bouton reste à côté */
+  }
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 var(--space);
+  padding: var(--space);
+  margin-bottom: var(--space);
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.filters p {
+  flex: 1 1 200px;
+  margin: 0 0 0.5rem;
+}
+
+.filters input,
+.filters select {
+  width: 100%;
+  padding: 0.5rem;
+  font: inherit;
+  color: inherit;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+}
+
+.results-count {
+  color: var(--color-muted);
+}
+
+.empty-message {
+  padding: var(--space);
+  text-align: center;
+  background: var(--color-surface);
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius);
+}
+
+.field-error {
+  display: block;
+  min-height: 1.2em;
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+  color: var(--color-error);
+}
+
+.is-invalid {
+  border-color: var(--color-error) !important;
+  outline: 2px solid rgba(185, 28, 28, 0.25);
+}
+
+.counter {
+  display: block;
+  text-align: right;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.counter.is-near-limit {
+  color: #b45309;
+  font-weight: 700;
+}
+
+.form-success {
+  padding: 0.75rem;
+  color: var(--color-success);
+  background: #ecfdf5;
+  border-radius: 6px;
+}
+
+/* Mode sombre : on redéfinit seulement les variables.
+   Tout le reste du CSS suit automatiquement. */
+[data-theme="dark"] {
+  --color-text: #e2e8f0;
+  --color-muted: #94a3b8;
+  --color-bg: #0f172a;
+  --color-surface: #1e293b;
+  --color-border: #334155;
+  --color-primary: #3b82f6;
+  --color-footer: #020617;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] a:not(.button, .logo, .site-header nav a) {
+  color: #93c5fd;
+}
+
+[data-theme="dark"] .form-success {
+  background: #064e3b;
+  color: #a7f3d0;
+}

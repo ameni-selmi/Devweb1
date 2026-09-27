@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Démo fetch</title>
+</head>
+<body>
+  <h1>Demander au serveur, sans recharger</h1>
+  <button type="button" id="refresh">Demander l'heure au serveur</button>
+  <p id="result">Pas encore de réponse.</p>
+  <p id="loaded-at"></p>
+
+  <script>
+    // La page elle même n'est chargée qu'une fois
+    document.querySelector('#loaded-at').textContent = 'Page chargée à ' + new Date().toLocaleTimeString();
+
+    const button = document.querySelector('#refresh');
+    const result = document.querySelector('#result');
+
+    button.addEventListener('click', async () => {
+      result.textContent = 'Chargement...';
+      try {
+        const response = await fetch('api-heure.php');
+        if (!response.ok) {
+          throw new Error(`Erreur HTTP ${response.status}`);
+        }
+        const data = await response.json();
+        result.textContent = `Il est ${data.time} sur le serveur. Bonjour ${data.visitor}, votre nombre : ${data.luckyNumber}.`;
+      } catch (error) {
+        result.textContent = 'Le serveur ne répond pas.';
+        console.error(error);
+      }
+    });
+  </script>
+</body>
+</html>

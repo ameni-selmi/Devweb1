@@ -14,7 +14,7 @@ Host: localhost:8000                     ← headers
 Content-Type: application/x-www-form-urlencoded
 Cookie: PHPSESSID=abc123
 
-name=Amine&email=amine%40ecole.tn        ← body (seulement en POST)
+name=Amine&email=amine%40campus.example        ← body (seulement en POST)
 ```
 
 ## Une réponse
@@ -61,7 +61,7 @@ Un GET ne modifie **jamais** de données.
 ## Anatomie d'une URL
 
 ```
-https://www.ecole.tn:443/clubs/robotique?tri=date#agenda
+https://www.example.org:443/clubs/robotique?tri=date#agenda
 protocole  domaine   port   chemin      query   fragment (jamais envoyé)
 ```
 

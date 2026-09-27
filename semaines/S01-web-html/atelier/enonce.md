@@ -10,7 +10,7 @@
 
 ## Contexte
 
-Pendant tout le semestre, vous allez construire **ClubHub**, la plateforme des clubs de l'école : les clubs publient des événements, les étudiants s'inscrivent. Aujourd'hui, vous créez la version 0 : trois pages statiques, **sans CSS**.
+Pendant tout le cours, vous allez construire **ClubHub**, la plateforme des clubs étudiants : les clubs publient des événements, les étudiants s'inscrivent. Aujourd'hui, vous créez la version 0 : trois pages statiques, **sans CSS**.
 
 ## Travail demandé
 
@@ -21,7 +21,7 @@ Créez un dossier `clubhub/` avec trois fichiers.
 **1. `index.html` : accueil**
 * Un `header` avec le nom « ClubHub » et une `nav` vers les trois pages.
 * Un `main` avec : un `h1`, une phrase de présentation, une section « Prochains événements » avec **2 événements** (titre, club, date, lien vers la page de l'événement).
-* Un `footer` (nom de l'école, année).
+* Un `footer` (nom du site et une courte phrase).
 
 **2. `evenements.html` : tous les événements**
 * Même `header` et même `footer`.
@@ -29,11 +29,11 @@ Créez un dossier `clubhub/` avec trois fichiers.
 
 | Club | Événement | Date | Lieu | Places |
 |---|---|---|---|---|
-| Club Robotique | Atelier Arduino pour débutants | 14/10/2026, 14 h | Salle B204 | 20 |
-| Club Photo | Sortie photo à la médina | 17/10/2026, 9 h | Entrée principale | 15 |
-| IEEE Student Branch | Conférence : l'IA dans l'industrie | 21/10/2026, 10 h | Amphi A | 120 |
-| Club Échecs | Tournoi blitz inter promo | 24/10/2026, 15 h | Foyer | 32 |
-| Enactus | Hackathon impact social | 31/10/2026, 9 h | Salle C101 | 40 |
+| Club Robotique | Atelier Arduino pour débutants | 14/10, 14 h | Salle B204 | 20 |
+| Club Photo | Sortie photo en ville | 17/10, 9 h | Entrée principale | 15 |
+| Club IA | Conférence : l'IA dans l'industrie | 21/10, 10 h | Amphithéâtre A | 120 |
+| Club Échecs | Tournoi blitz inter promo | 24/10, 15 h | Foyer des étudiants | 32 |
+| Club Entrepreneuriat | Hackathon impact social | 31/10, 9 h | Salle C101 | 40 |
 
 **3. `evenement.html` : détail d'un événement (Atelier Arduino)**
 * Titre, club, date, lieu, places, une description de 3 ou 4 lignes.
@@ -62,7 +62,7 @@ Chaque champ a un `label` relié, et un attribut `name`.
 
 ## Rendu
 
-* Créez un dépôt Git `clubhub` (GitHub ou GitLab), ajoutez l'enseignant.
+* Créez un dépôt Git `clubhub` (GitHub ou GitLab), ajoutez l'enseignante.
 * Poussez vos trois pages avant la séance S02.
 * Ces pages sont le point de départ du **TP1 noté**. Si vous n'avez pas fini, vous pourrez partir du corrigé.
 

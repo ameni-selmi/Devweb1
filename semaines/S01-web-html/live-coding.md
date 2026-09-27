@@ -10,7 +10,7 @@ But : montrer que HTTP est du texte, et qu'une page = beaucoup de requêtes.
    * Montrer les *Request Headers* (`Host`, `User-Agent`, `Accept-Language`).
    * Montrer les *Response Headers* (`Content-Type: text/html`).
    * Onglet **Response** : « c'est juste du texte, du HTML ».
-3. Ouvrir le site de l'école (ou un site plus riche). Recharger.
+3. Ouvrir le site de votre établissement (ou un site plus riche). Recharger.
    * Lire le compteur en bas : « 87 requests ». Demander : « combien de requêtes pour une seule page ? »
    * Filtrer par type : Doc, CSS, JS, Img. « Le navigateur lit le HTML, puis demande tout le reste. »
 4. Taper une URL qui n'existe pas (`/nimporte-quoi`). Montrer le `404`.
@@ -30,7 +30,7 @@ But : montrer la démarche, pas seulement le résultat. Taper en direct, faire d
    * « Le contenu principal → `main`. »
    * « En bas, les infos → `footer`. »
 4. Dans `main` : un `h1`, un paragraphe, puis une `section` « Prochains événements » avec deux `article` (titre `h3`, club, date, lien).
-   * Utiliser `<time datetime="2026-10-14T14:00">14 octobre, 14 h</time>` et expliquer pourquoi (machine lisible).
+   * Utiliser `<time datetime="10-14">14 octobre</time>` et expliquer pourquoi (machine lisible).
 5. **Erreur volontaire** : mettre un `h4` directement sous le `h2`. Ouvrir validator.w3.org (onglet *Validate by Direct Input*), coller, montrer l'avertissement. Corriger.
 6. Ouvrir la page dans le navigateur. « C'est moche. Tant mieux : c'est le travail du CSS. Le HTML est juste. »
 7. Ouvrir F12 → onglet **Elements** : montrer l'arbre. « Cet arbre, c'est le DOM. En semaine 3, on le modifiera avec JavaScript. »

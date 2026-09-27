@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Événements · ClubHub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">ClubHub</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="evenements.html" aria-current="page">Événements</a></li>
+        <li><a href="evenement.html">S'inscrire</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="theme-toggle" aria-pressed="false">Mode sombre</button>
+  </header>
+
+  <main>
+    <h1>Tous les événements</h1>
+    <p>5 événements à venir ce mois ci.</p>
+
+    <form class="filters" role="search">
+      <p>
+        <label for="search">Rechercher</label>
+        <input type="search" id="search" name="q" placeholder="Arduino, photo, IA...">
+      </p>
+      <p>
+        <label for="club-filter">Club</label>
+        <select id="club-filter" name="club">
+          <option value="">Tous les clubs</option>
+          <option value="robotique">Club Robotique</option>
+          <option value="photo">Club Photo</option>
+          <option value="ia">Club IA</option>
+          <option value="echecs">Club Échecs</option>
+          <option value="entrepreneuriat">Club Entrepreneuriat</option>
+        </select>
+      </p>
+      <p>
+        <label for="sort">Trier par</label>
+        <select id="sort" name="sort">
+          <option value="date">Date</option>
+          <option value="places">Places (plus grand d'abord)</option>
+        </select>
+      </p>
+    </form>
+
+    <p class="results-count" aria-live="polite"></p>
+    <p class="empty-message" hidden>Aucun événement ne correspond à votre recherche.</p>
+
+    <div class="event-list">
+      <article class="event-card" data-club="robotique" data-date="10-14" data-places="20">
+        <p class="club">Club Robotique</p>
+        <h2>Atelier Arduino pour débutants</h2>
+        <p class="meta"><time datetime="10-14">14 octobre</time>, 14 h</p>
+        <p class="meta">Salle B204</p>
+        <p class="places"><strong>20</strong> places</p>
+        <a href="evenement.html">Voir le détail</a>
+      </article>
+
+      <article class="event-card" data-club="photo" data-date="10-17" data-places="15">
+        <p class="club">Club Photo</p>
+        <h2>Sortie photo en ville</h2>
+        <p class="meta"><time datetime="10-17">17 octobre</time>, 9 h</p>
+        <p class="meta">Entrée principale</p>
+        <p class="places"><strong>15</strong> places</p>
+        <a href="evenement.html">Voir le détail</a>
+      </article>
+
+      <article class="event-card" data-club="ia" data-date="10-21" data-places="120">
+        <p class="club">Club IA</p>
+        <h2>Conférence : l'IA dans l'industrie</h2>
+        <p class="meta"><time datetime="10-21">21 octobre</time>, 10 h</p>
+        <p class="meta">Amphithéâtre A</p>
+        <p class="places"><strong>120</strong> places</p>
+        <a href="evenement.html">Voir le détail</a>
+      </article>
+
+      <article class="event-card" data-club="echecs" data-date="10-24" data-places="32">
+        <p class="club">Club Échecs</p>
+        <h2>Tournoi blitz inter promo</h2>
+        <p class="meta"><time datetime="10-24">24 octobre</time>, 15 h</p>
+        <p class="meta">Foyer des étudiants</p>
+        <p class="places"><strong>32</strong> places</p>
+        <a href="evenement.html">Voir le détail</a>
+      </article>
+
+      <article class="event-card" data-club="entrepreneuriat" data-date="10-31" data-places="40">
+        <p class="club">Club Entrepreneuriat</p>
+        <h2>Hackathon impact social</h2>
+        <p class="meta"><time datetime="10-31">31 octobre</time>, 9 h</p>
+        <p class="meta">Salle C101</p>
+        <p class="places"><strong>40</strong> places</p>
+        <a href="evenement.html">Voir le détail</a>
+      </article>
+    </div>
+
+    <section>
+      <h2>Récapitulatif</h2>
+      <table>
+        <thead>
+          <tr><th scope="col">Événement</th><th scope="col">Date</th><th scope="col">Places</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Atelier Arduino pour débutants</td><td>14/10</td><td>20</td></tr>
+          <tr><td>Sortie photo en ville</td><td>17/10</td><td>15</td></tr>
+          <tr><td>Conférence : l'IA dans l'industrie</td><td>21/10</td><td>120</td></tr>
+          <tr><td>Tournoi blitz inter promo</td><td>24/10</td><td>32</td></tr>
+          <tr><td>Hackathon impact social</td><td>31/10</td><td>40</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>ClubHub · La plateforme des clubs étudiants</p>
+  </footer>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

@@ -2,15 +2,17 @@
 marp: true
 theme: devweb
 paginate: true
-footer: 'Développement Web 1 · S02 · CSS'
+footer: 'Développement Web 1 · Amani Selmi · S02 · CSS'
 ---
 
 <!-- _class: titre -->
 <!-- _paginate: false -->
 <!-- _footer: '' -->
 
-# Semaine 2
-## CSS : box model, Flexbox, responsive
+# Développement Web 1
+## Séance 2 : CSS, box model, Flexbox, responsive
+
+**Amani Selmi, PhD-Engineer**
 
 ---
 
@@ -101,7 +103,7 @@ Piège : `!important` pour « forcer ». Si vous en avez besoin, votre CSS est m
 ```
 
 Changer une couleur partout = changer **une** ligne.
-Et en semaine 3 : le **mode sombre** en 5 lignes.
+Et en séance 3 : le **mode sombre** en 5 lignes.
 
 ---
 
@@ -288,7 +290,7 @@ Piège : les changements dans les DevTools ne sont **pas** enregistrés. Recopie
 
 ---
 
-## TP1 (noté, 15 %)
+## TP1 (noté)
 
 Styliser ClubHub pour qu'il ressemble à la **maquette** fournie.
 

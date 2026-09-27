@@ -1,4 +1,4 @@
-# S01 : Notes pour l'enseignant
+# S01 : Notes pour l'enseignante
 
 ## Objectif de la séance
 
@@ -15,7 +15,7 @@ Le message le plus important de la séance : **le client demande, le serveur ré
 * [ ] Vérifier en salle : navigateur récent, VS Code (ou autre éditeur), Git.
 * [ ] Publier le dépôt du cours et donner le lien aux étudiants.
 * [ ] Préparer le quiz diagnostic (`quiz-diagnostic.md`) sur papier ou dans un formulaire en ligne.
-* [ ] Ouvrir à l'avance : un site simple (par exemple le site de l'école) et `example.com` pour la démo DevTools.
+* [ ] Ouvrir à l'avance : un site simple (par exemple le site de votre établissement) et `example.com` pour la démo DevTools.
 * [ ] Avoir la solution de l'atelier ouverte dans un onglet, pour montrer le résultat attendu.
 
 ## Déroulé minuté

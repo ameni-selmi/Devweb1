@@ -31,7 +31,7 @@
 | `article` | Contenu autonome (un événement, un post) |
 | `aside` | Contenu secondaire |
 | `h1` ... `h6` | Titres, dans l'ordre, un seul `h1` |
-| `time datetime="2026-10-14T14:00"` | Date lisible par une machine |
+| `time datetime="10-14"` (ou `"2030-10-14T14:00"` avec année et heure) | Date lisible par une machine |
 | `div`, `span` | Aucun sens. En dernier recours. |
 
 ## Texte et liens

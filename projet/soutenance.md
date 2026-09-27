@@ -1,4 +1,4 @@
-# Soutenances : guide pour l'enseignant
+# Soutenances : guide pour l'enseignante
 
 ## Organisation
 

@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Amine Ben Salah",
+        "email": "amine@campus.example",
+        "password_hash": "$2y$12$FywotzDTLYG.e8UmO.SQoePW/55B36IWlBIYs.BGqxwZ0vdv15HoG",
+        "role": "student"
+    },
+    {
+        "id": 2,
+        "name": "Sarra Trabelsi",
+        "email": "sarra@campus.example",
+        "password_hash": "$2y$12$60vI4pQQMtDFbEr3dA6fp.YWeOlifihSNi4s3uohE8.vaHAWfTlUW",
+        "role": "student"
+    },
+    {
+        "id": 3,
+        "name": "Club Robotique",
+        "email": "robotique@campus.example",
+        "password_hash": "$2y$12$KET7qz5T7XQyhPtI2soYi.u..motKeeRTGVqjsd1X4sVsyULuNR8K",
+        "role": "organizer"
+    }
+]

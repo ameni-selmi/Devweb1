@@ -1,4 +1,4 @@
-# S02 : Notes pour l'enseignant
+# S02 : Notes pour l'enseignante
 
 ## Objectif de la séance
 

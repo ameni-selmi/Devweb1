@@ -1,10 +1,10 @@
 # Projet final : cahier des charges
 
-**40 % de la note finale** · En binôme · Distribué en S04, soutenance en S11
+**Noté sur 20** · En binôme · Distribué en S04, soutenance en S11
 
 ## L'idée
 
-Vous avez construit ClubHub avec l'enseignant, étape par étape. Maintenant, vous construisez **votre propre application**, seuls, avec les mêmes fondamentaux.
+Vous avez construit ClubHub avec l'enseignante, étape par étape. Maintenant, vous construisez **votre propre application**, seuls, avec les mêmes fondamentaux.
 
 On ne veut pas un énième site « ajouter / modifier / supprimer ». On veut une application qui **sert à quelqu'un**, qui a **une idée à elle**, et que vous serez fiers de montrer.
 
@@ -28,7 +28,7 @@ C'est ici que votre formation d'ingénieur compte : mettez de la vraie logique d
 
 HTML, CSS, JavaScript, PHP 8, MySQL via PDO. **Interdits** : frameworks et bibliothèques CSS (Bootstrap, Tailwind), bibliothèques JS (jQuery, React, Vue), frameworks PHP (Laravel, Symfony), templates tout faits.
 
-Exception possible, **sur demande écrite** dans la proposition : une petite bibliothèque pour une tâche très précise (par exemple dessiner un graphique). L'enseignant accepte ou refuse.
+Exception possible, **sur demande écrite** dans la proposition : une petite bibliothèque pour une tâche très précise (par exemple dessiner un graphique). L'enseignante accepte ou refuse.
 
 ### Règle 4 : vous devez tout comprendre
 
@@ -44,11 +44,11 @@ Ces exemples servent à vous inspirer. Vous pouvez en prendre un, mais une idée
 | Réservation du matériel du labo | Détection des conflits de réservation, calendrier de disponibilité |
 | Quiz en direct pour un cours | Questions minutées, scores, classement en direct (fetch) |
 | Jeu tour par tour à deux (morpion, bataille navale, puissance 4) | Règles du jeu côté serveur, le JS interroge le serveur pour le coup de l'adversaire |
-| Mur de questions anonymes pour un amphi | Votes, classement des questions, modération par l'enseignant |
+| Mur de questions anonymes pour un amphi | Votes, classement des questions, modération par l'enseignante |
 | Suivi d'habitudes | Séries (*streaks*), statistiques, graphique en SVG |
 | Escape game web | Énigmes, progression enregistrée, indices qui coûtent des points |
-| Covoiturage pour aller à l'école | Correspondance trajets / passagers, places restantes |
-| Tournoi sportif ou e-sport de l'école | Génération du tableau (poules, élimination), saisie des scores, classement |
+| Covoiturage pour aller au campus | Correspondance trajets / passagers, places restantes |
+| Tournoi sportif ou e-sport du campus | Génération du tableau (poules, élimination), saisie des scores, classement |
 | Partage des dépenses en colocation | Calcul de qui doit combien à qui, en minimisant les remboursements |
 | Planning des gardes d'une pharmacie de quartier | Répartition équitable, contraintes d'indisponibilité |
 | Raccourcisseur de liens pour un club | Génération de codes, statistiques de visites par jour |
@@ -90,7 +90,7 @@ Faire plus d'options ne remplace pas une Base incomplète. Une Base propre vaut 
 | Semaine | Étape | Ce que vous rendez |
 |---|---|---|
 | S04 | Lancement | Former les binômes. Commencer à chercher une idée et un utilisateur. |
-| **S06** | **Proposition** (avant dimanche 23 h 59) | Une page : voir `proposition-modele.md`. L'enseignant valide ou demande des changements en S07. |
+| **S06** | **Proposition** (avant dimanche 23 h 59) | Une page : voir `proposition-modele.md`. L'enseignante valide ou demande des changements en S07. |
 | **S08** | **Jalon 1** (en séance) | Schéma de la base créé, pages principales en place, connexion qui fonctionne, dépôt Git à jour. |
 | S09 | Revue de code croisée | Vous relisez le projet d'un autre binôme avec une grille, il relit le vôtre. |
 | **S10** | **Jalon 2** (en séance) | Fonctionnalités **gelées**. README complet. Démo répétée. |
@@ -118,7 +118,7 @@ Dans votre dépôt Git :
 
 1. **Démo** (4 min) : montrez l'application et surtout sa mécanique centrale.
 2. **Questions individuelles** (5 min) : chaque membre répond **seul**. Exemples : « Où arrivent les données de ce formulaire ? », « Que se passe-t-il si je supprime ce `prepare` ? », « Où est vérifié que cette page est protégée ? », « Ouvrez les DevTools et montrez la requête quand je clique ici. »
-3. **Modification en direct** (3 min) : l'enseignant demande une petite modification (par exemple « ajoutez un champ à ce formulaire et enregistrez le en base »). Un membre, choisi par l'enseignant, la fait.
+3. **Modification en direct** (3 min) : l'enseignante demande une petite modification (par exemple « ajoutez un champ à ce formulaire et enregistrez le en base »). Un membre, choisi par l'enseignante, la fait.
 
 ## Notation
 
